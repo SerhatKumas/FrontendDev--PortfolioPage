@@ -1,0 +1,22 @@
+body{
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  overflow-x: hidden;
+}
+.hw-100{
+  width: 100vw;
+  height: 100vh;
+}
+.pt-15vh{
+  padding-top: 15vh;
+}
+.style{
+  text-shadow: -5px 5px 20px #AAA492;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  transition: all 0.25s ease-out;
+}

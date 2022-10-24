@@ -1,0 +1,22 @@
+.container-logo {
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+.logo {
+  color: white;
+  letter-spacing: -0.05em;
+  font-size: 20vh;
+}
+#sub-logo{
+  font-size: 5vh;
+  text-shadow: -5px 5px 20px #AAA492;
+}
+.center{
+  padding-top: 25vh;
+}
+/*.logo:hover {
+  text-shadow: -16px 6px 75px #A2B5BB;
+}
+*/
