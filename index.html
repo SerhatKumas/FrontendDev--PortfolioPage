@@ -20,11 +20,13 @@
       <div class="container-logo hw-100 home-title">
          <div class="logo style center" id="main-logo"></div>
          <div class="logo" id="sub-logo"></div>
-         <div class="scroll-downs">
+         <a href="#aboutMe">
+          <div class="scroll-downs">
             <div class="mousey">
                <div class="scroller"></div>
             </div>
          </div>
+         </a>
       </div>
       <div class="container hw-100 font">
          <div class="row h-100">
@@ -53,7 +55,7 @@
                      <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
                      <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
                   </svg>
-                  PORTFOLIO
+                  SKILLS
                  </a>
                </li>
                <li class="nav-item pt-3">
@@ -67,7 +69,7 @@
              </ul>
            </div>
            
-           <div class="col-9 h-100 text-center text-white">
+           <div class="col-9 h-100 text-center text-white" id="aboutMe">
             <h1 >About Me</h1>
           <div class="row">
             <div class="col-6 pt-10vh">
@@ -194,7 +196,6 @@
                             <h1>Bachelor Degree</h1>
                             <p>
                               <a href="https://ceng.iyte.edu.tr/tr/">Izmir Institute of Technology <br> Computer Engineering</a> 
-                             
                             </p>
                           </div>
                         </div>
@@ -216,7 +217,35 @@
             </div>
          </div>
        </div>
-       <div class="container font hw-100" id="portfolio"></div>
+       <div class="container font hw-100" id="portfolio">
+        <div class="container pt-10vh align-items-center">
+          <h1 class="text-white">Technologies and Skills</h1>
+          <div class="container skill">
+            <div class="row pt-10vh">
+              <div class="col-12 text-center">
+                  <span class="p-5">
+                      <img src="public/assets/icons/html5.png" alt="Html5 Logo" srcset="">
+                      </span> <span class="p-5">
+                      <img src="public/assets/icons/css3.png" alt="Css Logo" srcset="">
+                      </span> <span class="p-5">
+                      <img src="public/assets/icons/javascript.png" alt="Javascript Logo" srcset="">
+                      </span> <span class="p-5">
+                      <img src="public/assets/icons/bootstrap.png" alt="Bootstap Logo" srcset="">
+                      </span>
+              </div>
+          </div>
+          <div class="row pt-10vh">
+              <div class="col-12 text-center">
+                  <span class="p-5"><img src="public/assets/icons/java.png" alt="Java Logo" srcset=""></span> 
+                  <span class="p-5"><img src="public/assets/icons/php.png" alt="Php Logo" srcset=""></span> 
+                  <span class="p-5"><img src="public/assets/icons/mysql.png" alt="Mysql Logo" srcset=""></span> 
+                  <span class="p-5"><img src="public/assets/icons/git.png" alt="Git Logo" srcset=""></span> 
+                  <span class="p-5"><img src="public/assets/icons/unity.png" alt="Unity Logo" srcset=""></span> 
+              </div>
+          </div>
+          </div>
+      </div>
+       </div>
        <div class="container font hw-100 pt-10vh" id="contactMe">
         <div class="row justify-content-center">
           <h1 class="text-white">Contact Me</h1>
@@ -241,33 +270,6 @@
                   
                 </div>
          </footer>
-<script>
-   var items = document.querySelectorAll(".timeline li");
- 
- function isElementInViewport(el) {
- var rect = el.getBoundingClientRect();
- return (
- rect.top >= 0 &&
- rect.left >= 0 &&
- rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
- rect.right <= (window.innerWidth || document.documentElement.clientWidth)
- );
- }
- 
- function callbackFunc() {
- for (var i = 0; i < items.length; i++) {
- if (isElementInViewport(items[i])) {
- if(!items[i].classList.contains("in-view")){
-   items[i].classList.add("in-view");
- }
- } else if(items[i].classList.contains("in-view")) {
-   items[i].classList.remove("in-view");
- }
- }
- }
- 
- window.addEventListener("load", callbackFunc);
- window.addEventListener("scroll", callbackFunc);
- </script>
+<script src="src/JsFiles/scrollAnimation.js"></script>
    </body>
 </html>

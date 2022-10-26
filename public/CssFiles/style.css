@@ -53,6 +53,13 @@ body{
   color: #f5af19;
 }
 
+.skill{
+  background-color: #f7e9f7;
+  border-radius: 30px;
+  height: 60vh;
+  margin-top: 10vh;
+}
+
 @media
 (prefers-reduced-motion: no-preference) {
   html {
