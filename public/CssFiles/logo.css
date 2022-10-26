@@ -3,18 +3,18 @@
   color: #fff;
   text-align: center;
   vertical-align: middle;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: "Fuzzy Bubbles", cursive;
 }
 .logo {
   color: white;
   letter-spacing: -0.05em;
   font-size: 20vh;
 }
-#sub-logo{
+#sub-logo {
   font-size: 5vh;
-  text-shadow: -5px 5px 20px #AAA492;
+  text-shadow: -5px 5px 20px #aaa492;
 }
-.center{
+.center {
   padding-top: 25vh;
 }
 /*.logo:hover {
