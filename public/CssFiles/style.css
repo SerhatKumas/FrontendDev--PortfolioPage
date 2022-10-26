@@ -1,22 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
   width: 100%;
   min-height: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  background: linear-gradient(54deg, #335de7, black);
   overflow-x: hidden;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 .hw-100{
   width: 100vw;
   height: 100vh;
 }
-.pt-15vh{
-  padding-top: 15vh;
+.pt-30vh{
+  padding-top: 30vh;
+}
+.pt-10vh{
+  padding-top: 10vh;
 }
 .style{
   text-shadow: -5px 5px 20px #AAA492;
   color: white;
-  font-family: 'Acme', sans-serif;
-  font-family: 'Fredoka One', cursive;
   transition: all 0.25s ease-out;
+}
+
+.font{
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.fixed-footer {
+	text-align: center;
+	margin-top: auto;
+	background-color: transparent;
+	height: 10vh;
+}
+
+#profilePhoto{
+  border-radius: 30px;
+  width: 30vw;
+  height:60vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+#education a{
+  color: #335de7;
+    text-decoration: dotted;
+}
+
+#education a:hover{
+  color: #f5af19;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

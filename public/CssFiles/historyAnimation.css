@@ -50,6 +50,7 @@
 }
 .timeline ul li div div {
     height: 100px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
